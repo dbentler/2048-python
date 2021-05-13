@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This game was created for the "Dudes of 708" Software Engineer Internship coding challenge, which can be found [here](challenge/Dudes-of-708.pdf). It satisfies Challenge #3.
+This game was created for the "Dudes of 708" Software Engineering Internship coding challenge, which can be found [here](challenge/Dudes-of-708.pdf). It satisfies Challenge #3.
 
 ## What is it?
 
