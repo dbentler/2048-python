@@ -10,7 +10,7 @@ def how_to_play():
     print("There are only 4 rules I can tell you:\n"
           "1) The name of the game is 'Petals around the Rose'.\n"
           "2) The name of the game is important.\n"
-          "3) Five dice will be rolled, and the computer will calculate a score.\n"
+          "3) Five dice will be rolled, and the computer will calculate a result.\n"
           "4) The result will always be an even number or 0."
         )
     time.sleep(3)
@@ -33,12 +33,12 @@ def game():
     guess = 0
     while guess != -1:
         print(BORDER)
-        if player.streak == 2:
+        if player.streak == 10:
             player.potentate = True
 
         dice = d.Dice()
         print(player)
-        
+
         try:
             guess = int(input("Enter your guess as an integer: "))
         except:
@@ -54,7 +54,7 @@ def game():
             player.streak = 0
             time.sleep(2.5)
         if guess == dice.result:
-            print(f"Correct! The result was {dice.result}")
+            print(f"Correct! The result was {dice.result}.")
             player.currentRoll += 1
             player.correctGuess += 1
             player.streak += 1
