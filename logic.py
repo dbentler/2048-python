@@ -64,6 +64,3 @@ def play():
     how_to_play()
     game()
 
-if __name__ == "__main__":
-    play()
-
