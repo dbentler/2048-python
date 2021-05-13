@@ -7,10 +7,11 @@ BORDER = "=========================================="
 DIVIDER = "------------------------------------------"
 
 def how_to_play():
-    print("There are only 3 rules I can tell you:\n"
+    print("There are only 4 rules I can tell you:\n"
           "1) The name of the game is 'Petals around the Rose'.\n"
           "2) The name of the game is important.\n"
-          "3) The result will always be an even number or 0."
+          "3) Five dice will be rolled, and the computer will calculate a score.\n"
+          "4) The result will always be an even number or 0."
         )
     time.sleep(3)
     
@@ -32,13 +33,17 @@ def game():
     guess = 0
     while guess != -1:
         print(BORDER)
-        if player.streak == 3:
-            player.potentate == True
+        if player.streak == 2:
+            player.potentate = True
 
         dice = d.Dice()
         print(player)
         
-        guess = int(input("Enter your guess as an integer: "))
+        try:
+            guess = int(input("Enter your guess as an integer: "))
+        except:
+            print("Please enter your guess as a valid integer!")
+            guess = 3
 
 
         if guess == -1:
